@@ -4,6 +4,7 @@ using NUnit.Framework;
 
 namespace Pablocom.LinqExtensions.UnitTests
 {
+    [TestFixture]
     public class MaxByTests
     {
         [Test]
