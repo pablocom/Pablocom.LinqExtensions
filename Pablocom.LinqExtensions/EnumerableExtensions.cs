@@ -5,7 +5,7 @@ using System.Linq;
 
 namespace Pablocom.LinqExtensions
 {
-    public static class DummyEnumerableExtensions
+    public static class EnumerableExtensions
     {
         public static TSource MaxBy<TSource, TKey>(this IEnumerable<TSource> collection, Func<TSource, TKey> selector)
             where TKey : IComparable<TKey>
