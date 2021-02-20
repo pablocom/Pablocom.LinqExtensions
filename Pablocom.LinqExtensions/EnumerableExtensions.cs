@@ -8,27 +8,18 @@ namespace Pablocom.LinqExtensions
     public static class DummyEnumerableExtensions
     {
         public static TSource MaxBy<TSource, TKey>(this IEnumerable<TSource> collection, Func<TSource, TKey> selector)
-            where TKey : IComparable
+            where TKey : IComparable<TKey>
         {
             if (collection.IsEmpty())
                 throw new InvalidOperationException("Sequence contains no elements");
             
-            var source = collection.ToArray();
-            var maxObject = source.First();
-            var positionFound = 0;
+            var max = collection.First();
 
-            for (var i = 0; i < source.Length; i++)
-            {
-                var item = source[i];
-                
-                if (selector(item).CompareTo(selector(maxObject)) == 1)
-                {
-                    maxObject = item;
-                    positionFound = i;
-                }
-            }
+            foreach (var item in collection)
+                if (selector(item).CompareTo(selector(max)) == 1)
+                    max = item;
 
-            return source[positionFound];
+            return max;
         }
 
         public static bool IsEmpty<TSource>(this IEnumerable<TSource> collection)
