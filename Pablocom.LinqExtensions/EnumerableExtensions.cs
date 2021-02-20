@@ -23,12 +23,6 @@ namespace Pablocom.LinqExtensions
             return max;
         }
 
-        public static bool IsEmpty<TSource>(this IEnumerable<TSource> collection)
-        {
-            if (!collection.Any())
-                return true;
-
-            return false;
-        }
+        public static bool IsEmpty<TSource>(this IEnumerable<TSource> collection) => !collection.Any();
     }
 }
