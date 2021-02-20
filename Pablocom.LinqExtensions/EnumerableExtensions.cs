@@ -14,10 +14,11 @@ namespace Pablocom.LinqExtensions
                 throw new InvalidOperationException("Sequence contains no elements");
             
             var max = collection.First();
-
             foreach (var item in collection)
+            {
                 if (selector(item).CompareTo(selector(max)) == 1)
                     max = item;
+            }
 
             return max;
         }
