@@ -16,7 +16,7 @@ namespace Pablocom.LinqExtensions
             var max = collection.First();
             foreach (var item in collection)
             {
-                if (selector(item).CompareTo(selector(max)) == 1)
+                if (selector(item).CompareTo(selector(max)) > 0)
                     max = item;
             }
 

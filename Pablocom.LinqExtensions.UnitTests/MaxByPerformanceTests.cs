@@ -15,7 +15,7 @@ namespace Pablocom.LinqExtensions.UnitTests
 
         public MaxByPerformanceTests()
         {
-            for (int i = 0; i < 400000000; i++)
+            for (int i = 0; i < 4000000; i++)
             {
                 sampleCollection.Add(new Dummy(random.Next(-100000, 100000)));
             }
@@ -28,7 +28,7 @@ namespace Pablocom.LinqExtensions.UnitTests
             stopwatch.Restart();
 
             var result = sampleCollection
-                .MaxBy(x => x.IntProperty); // Time complexity: O(n), Space complexity: O(1)
+                .MaxBy(x => x.IntProperty);
             
             Console.WriteLine(stopwatch.Elapsed);
         }
@@ -40,7 +40,7 @@ namespace Pablocom.LinqExtensions.UnitTests
             stopwatch.Restart();
 
             var result = sampleCollection
-                .OrderByDescending(x => x.IntProperty) // Time complexity: O(n*logn), Space complexity: O(log n)
+                .OrderByDescending(x => x.IntProperty) 
                 .First();
             
             Console.WriteLine(stopwatch.Elapsed);

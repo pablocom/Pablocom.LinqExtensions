@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using NUnit.Framework;
 
 namespace Pablocom.LinqExtensions.UnitTests
@@ -33,7 +34,7 @@ namespace Pablocom.LinqExtensions.UnitTests
             };
         
             var maxByProperty = collection.MaxBy(x => x.IntProperty);
-        
+
             Assert.That(maxByProperty.IntProperty, Is.EqualTo(expected.IntProperty));
             Assert.That(maxByProperty, Is.EqualTo(expected));
         }
