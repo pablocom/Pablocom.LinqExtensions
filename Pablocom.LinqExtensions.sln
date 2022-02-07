@@ -1,8 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pablocom.LinqExtensions", "Pablocom.LinqExtensions\Pablocom.LinqExtensions.csproj", "{1A200487-2788-4675-AB87-7654931FB768}"
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.32112.339
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Pablocom.LinqExtensions", "Pablocom.LinqExtensions\Pablocom.LinqExtensions.csproj", "{1A200487-2788-4675-AB87-7654931FB768}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pablocom.LinqExtensions.UnitTests", "Pablocom.LinqExtensions.UnitTests\Pablocom.LinqExtensions.UnitTests.csproj", "{1B1E390E-7C50-4138-9A59-981BB7DC2A6D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Pablocom.LinqExtensions.UnitTests", "Pablocom.LinqExtensions.UnitTests\Pablocom.LinqExtensions.UnitTests.csproj", "{1B1E390E-7C50-4138-9A59-981BB7DC2A6D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pablocom.LinqExtensions.Benchmarks", "Pablocom.LinqExtensions.Benchmarks\Pablocom.LinqExtensions.Benchmarks.csproj", "{89E3C868-BCFC-4777-8E28-A6ED37327E23}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -18,5 +23,15 @@ Global
 		{1B1E390E-7C50-4138-9A59-981BB7DC2A6D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1B1E390E-7C50-4138-9A59-981BB7DC2A6D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1B1E390E-7C50-4138-9A59-981BB7DC2A6D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{89E3C868-BCFC-4777-8E28-A6ED37327E23}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{89E3C868-BCFC-4777-8E28-A6ED37327E23}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{89E3C868-BCFC-4777-8E28-A6ED37327E23}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{89E3C868-BCFC-4777-8E28-A6ED37327E23}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0015C655-7BB2-4586-B719-C28660A125C1}
 	EndGlobalSection
 EndGlobal
